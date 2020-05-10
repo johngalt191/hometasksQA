@@ -1,0 +1,21 @@
+//1. Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
+
+import java.util.Scanner;  // Import the Scanner class
+
+class MyClass {
+    public static int getCountsOfDigigts(long number) {
+        return String.valueOf(Math.abs(number)).length();
+    }
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Введите число: ");
+        Integer int1 = Integer.valueOf(myObj.nextLine());  // Read user input
+        System.out.println("Введите второе число: ");
+        Integer int2 = Integer.valueOf(myObj.nextLine());  // Read user input
+
+        System.out.println("Введенные числа " + int1 + " и " + int2 + ", их длинна соответственно " + getCountsOfDigigts(int1) + " и " + getCountsOfDigigts(int2));
+
+
+    }
+}
+
