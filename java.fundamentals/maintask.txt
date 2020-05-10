@@ -57,3 +57,25 @@ class MyClass {
         System.out.println(int1 + " * " + int2 + " = " + int1 * int2);  // Output user input
     }
 }
+
+//5. Ввести число от 1 до 12. Вывести на консоль название месяца, соответствующего данному числу.
+// Осуществить проверку корректности ввода чисел.
+
+import java.time.Month;
+import java.util.Scanner;  // Import the Scanner class
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Введи число от 1 до 12:");
+        Integer int1 = Integer.valueOf(myObj.nextLine());  // Read user input
+        if (int1>12) {
+            System.out.println("Такого месяца не существует. Вы ввели число больше 12");
+        }
+        else if (int1<1) {
+            System.out.println("Такого месяца не существует. Вы ввели число меньше 1");
+        }
+        else
+            System.out.println("Ваш месяц: " + int1 + " = " + Month.of(int1));  // Вернёт месяц
+    }
+}
