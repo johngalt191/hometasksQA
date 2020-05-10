@@ -21,7 +21,21 @@ class MyClass {
         System.out.println("Enter some arguments: ");
 
         String userName = myObj.nextLine();  // Read user input
-        String reverse = new StringBuffer(userName).reverse().toString();
+        String reverse = new StringBuffer(userName).reverse().toString(); // reverse string
         System.out.println("Your string reverse: " + reverse);  // Output user input
+    }
+}
+
+//3.Вывести заданное количество случайных чисел с переходом и без перехода на новую строку
+import java.util.Random;
+class MyClass {
+    public static void main(String[] args) {
+        Random rnd = new Random(System.currentTimeMillis());
+        int number = rnd.nextInt(100);
+        int number1 = rnd.nextInt(100);
+        int number2 = rnd.nextInt(100);
+        System.out.println(number);
+        System.out.print(number2);
+        System.out.println(" " + number1);
     }
 }
