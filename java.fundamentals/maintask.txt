@@ -39,3 +39,21 @@ class MyClass {
         System.out.println(" " + number1);
     }
 }
+
+//4.Ввести целые числа как аргументы командной строки, подсчитать их сумму (произведение) и вывести результат на консоль.
+
+import java.util.Scanner;  // Import the Scanner class
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Введи первое число:");
+
+        Integer int1 = Integer.valueOf(myObj.nextLine());  // Read user input
+
+        System.out.println("Введи второе: ");
+
+        Integer int2 = Integer.valueOf(myObj.nextLine());
+        System.out.println(int1 + " * " + int2 + " = " + int1 * int2);  // Output user input
+    }
+}
