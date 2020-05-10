@@ -10,3 +10,18 @@ class MyClass {
         System.out.println("Приветствую, " + userName + "!");  // Output user input
     }
 }
+
+//2.Отобразить в окне консоли аргументы командной строки в обратном порядке.
+
+import java.util.Scanner;  // Import the Scanner class
+
+class MyClass {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter some arguments: ");
+
+        String userName = myObj.nextLine();  // Read user input
+        String reverse = new StringBuffer(userName).reverse().toString();
+        System.out.println("Your string reverse: " + reverse);  // Output user input
+    }
+}
